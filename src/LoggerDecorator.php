@@ -11,6 +11,7 @@ class LoggerDecorator extends Logger
 {
     public function addRecord(int $level, string $message, array $context = []): bool
     {
+        // AccessDeniedHttpException will not be recorded using a logger:
         if (reset($context) instanceof AccessDeniedHttpException) {
             return true;
         }

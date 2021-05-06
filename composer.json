@@ -16,7 +16,8 @@
   "require": {
     "php": ">=7.4",
     "symfony/monolog-bridge": "*",
-    "symfony/dependency-injection": "*"
+    "symfony/dependency-injection": "*",
+    "symfony/console": "*"
   },
   "autoload": {
     "psr-4": {
